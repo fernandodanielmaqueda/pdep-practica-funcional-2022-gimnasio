@@ -14,6 +14,11 @@ Este proyecto cuenta con 2 archivos relevantes (además del `README.md` que est�
 - `src/Library.hs`: acá van las definiciones de funciones y tipos de datos que se piden para resolver la consigna.
 - `test/Spec.hs`: acá se definen las pruebas automáticas.
 
+Cloning into 'practica-funcional-2022-gimnasio-haskull'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (11/11), done.
+
 En la medida en la que avancen sobre el ejercicio, recuerden **subir su solución a GitHub** con los comandos:
 - `git add .` y `git commit -m "Mensaje que explica los cambios"` para versionar todos sus cambios
   > 💡 Alternativamente se pueden combinar ambas operaciones con el comando: `git commit -am "Mensaje que explica los cambios"`. La opción `-am` indica que se desean agregar los cambios sobre todos los archivos modificados al commit, además de indicar el mensaje a usar.

@@ -30,12 +30,7 @@ prueba = Gimnasta {
 }
 
 gimnastaDePrueba :: Gimnasta
-<<<<<<< HEAD
 gimnastaDePrueba = Gimnasta 20 70 10
-=======
-gimnastaDePrueba = prueba
---gimnastaDePrueba = Gimnasta 17 10 15
->>>>>>> 75af59189856936d62a059ecceb3a5a8027ac03a
 
 -------------------------------------
 -- Punto 1: Gimnastas saludables

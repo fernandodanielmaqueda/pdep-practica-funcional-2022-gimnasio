@@ -5,19 +5,27 @@ module Library where
 ---------------------------
 
 -- Declarar el tipo de dato Gimnasta
+data Gimnasta = Gimnasta {
+    edad :: Int,
+    peso :: Int,
+    coeficiente :: Int
+} deriving(Eq, Show)
 
 -- Explicitar el tipo de esta función en base al uso esperado:
+relax :: Int-> Gimnasta -> Gimnasta
 relax minutos gimnasta = gimnasta
 
 -- Declarar la constante gimnastaDePrueba de tipo Gimnasta
 -- para usarlo desde las pruebas (Spec.hs) y/o desde la consola
 gimnastaDePrueba :: Gimnasta
-gimnastaDePrueba = undefined
+gimnastaDePrueba = Gimnasta 20 70 10
 
 -------------------------------------
 -- Punto 1: Gimnastas saludables
 -------------------------------------
 
+estaObeso gimnasta= peso gimnasta>100
+esSaludable gimnasta= not(estaObeso gimnasta) && coeficiente gimnasta>5
 
 ---------------------------
 -- Punto 2: Quemar calorías

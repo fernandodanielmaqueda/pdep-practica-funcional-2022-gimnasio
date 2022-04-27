@@ -14,13 +14,13 @@ relax minutos gimnasta = gimnasta
 data Gimnasta = Gimnasta {
     edad :: Int,
     peso :: Int,
-    coeficienteDeTonificacion :: Int
+    coefDeTonific :: Int
 } deriving(Show, Eq)
 
 prueba = Gimnasta {
     edad = 15,
-    peso = 10,
-    coeficienteDeTonificacion = 12
+    peso = 120,
+    coefDeTonific = 12
 }
 
 gimnastaDePrueba :: Gimnasta
@@ -30,7 +30,14 @@ gimnastaDePrueba = prueba
 -------------------------------------
 -- Punto 1: Gimnastas saludables
 -------------------------------------
+esObeso :: Gimnasta -> Bool
+esObeso gimnasta = peso gimnasta > 100
 
+estaTonificado :: Gimnasta -> Bool
+estaTonificado gimnasta = coefDeTonific gimnasta > 5
+
+estaSaludable :: Gimnasta -> Bool
+estaSaludable gimnasta = (not (esObeso gimnasta)) && (estaTonificado gimnasta)
 
 ---------------------------
 -- Punto 2: Quemar calorías

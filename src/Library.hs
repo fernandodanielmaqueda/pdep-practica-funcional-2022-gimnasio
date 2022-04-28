@@ -24,6 +24,14 @@ data Gimnasta = Gimnasta {
     tonificacion :: Int
 } deriving(Show, Eq)
 
+gimnastaDePrueba :: Gimnasta
+gimnastaDePrueba = Gimnasta {
+    edad = 15,
+    peso = 200,
+    tonificacion = 12
+}
+
+-- Otra forma de declararlo:
 --gimnastaDePrueba :: Gimnasta
 --gimnastaDePrueba = Gimnasta {tonificacion = 3, edad = 30, peso = 75}
 
@@ -68,13 +76,6 @@ caminataEnCinta :: Minutos -> Gimnasta -> Gimnasta
 caminataEnCinta = ejercicioEnCinta velocidadPromedio
     where
         velocidadPromedio = 5
-
-gimnastaDePrueba :: Gimnasta
-gimnastaDePrueba = Gimnasta {
-    edad = 15,
-    peso = 200,
-    tonificacion = 12
-}
 
 entrenamientoEnCinta :: Minutos -> Gimnasta -> Gimnasta
 entrenamientoEnCinta minutos = ejercicioEnCinta velocidadPromedio minutos
